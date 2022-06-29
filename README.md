@@ -100,7 +100,15 @@ output "subnet_id" {
    }
  }
 ```
-
+## Initialisation Azure 
+Se connecter sur Azure 
+```
+$ az login
+```
+Affecter la souscription azure 
+```
+$ az account set --subscription="765266c6-9a23-4638-af32-dd1e32613047"
+```
 ## Exécuter les commandes terraform :
 pour initialiser terraform
 ```
