@@ -114,3 +114,22 @@ pour initialiser terraform
 ```
 $ terraform init
 ```
+Créer le plan d'exécution 
+
+```
+$ terraform plan -out main.tfplan
+```
+Appliquer le plan d'exécution sur l'infrastructure cloud azure 
+
+```
+$ terraform apply main.tfplan
+```
+
+## Les erreurs : 
+```
+│ Error: Error: Subnet: (Name "backend" / Virtual Network Name "example-network" / Resource Group "devops-TP2") was not found
+│ 
+│   with data.azurerm_subnet.test,
+│   on terraform.tf line 33, in data "azurerm_subnet" "test":
+│   33:  data "azurerm_subnet" "test" {
+```
